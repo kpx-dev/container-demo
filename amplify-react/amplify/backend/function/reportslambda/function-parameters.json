@@ -1,0 +1,12 @@
+{
+    "permissions": {
+        "storage": {
+            "oaktreereports": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}

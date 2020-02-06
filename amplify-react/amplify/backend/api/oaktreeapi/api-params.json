@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/reports",
+            "lambdaFunction": "reportslambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "oaktreeapi",
+    "apiName": "oaktreeapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "reportslambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplify-react-dev-214952-authRole",
+        "unAuthRoleName": "amplify-amplify-react-dev-214952-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "reportslambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

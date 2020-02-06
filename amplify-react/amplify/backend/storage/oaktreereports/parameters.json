@@ -1,0 +1,7 @@
+{
+    "tableName": "oaktreereports",
+    "partitionKeyName": "name",
+    "partitionKeyType": "S",
+    "sortKeyName": "date",
+    "sortKeyType": "S"
+}
