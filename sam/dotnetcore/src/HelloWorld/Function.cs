@@ -34,7 +34,7 @@ namespace HelloWorld
             // var location = await GetCallingIP();
             var body = new Dictionary<string, string>
             {
-                { "message", "hello world from .NET Core app: v1" },
+                { "message", "hello world from .NET Core app: v2" },
                 { "location", "s3://bucket/path/to/file.pdf" }
             };
 

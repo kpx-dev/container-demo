@@ -27,9 +27,9 @@ class App extends Component {
     return (
       <div className="App">
        <header className="App-header">
-
-        <button onClick={this.handleSearch}>Search</button>
-
+        <h1>
+        <button onClick={this.handleSearch}>Search Reports</button>
+        </h1>
         <p>
         location: {this.state.data.location}<br /><br />
         message: {this.state.data.message}
