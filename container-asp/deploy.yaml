@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asp
+  labels:
+    app: asp
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asp
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: asp
+    spec:
+      containers:
+      - image: 906068570608.dkr.ecr.us-east-1.amazonaws.com/asp:latest
+        imagePullPolicy: Always
+        name: asp
+        ports:
+        - containerPort: 80
+          protocol: TCP

@@ -1,0 +1,8 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: asp
+spec:
+  backend:
+    serviceName: asp
+    servicePort: 80
